@@ -8,12 +8,9 @@
 }
 
 .news{
-  background: rgba(0, 0, 0, 0.4);
-  height: 700px;
+  background: #F2F2F2;
   border-bottom: 1px;
-}
-.news-content{
-  margin-top: 148px;
+  height: 500px;
 }
 
 .news-text{
@@ -21,6 +18,7 @@
   font-family: Roboto Condensed;
   size: 30px;
   color: #39454b;
+  padding-top: 150px;
 }
 
 .about-img{
@@ -33,6 +31,37 @@
   border-bottom: 1px solid gray;
 }
 
+.about-text-row{
+  margin-top: 20px;
+}
+
+.about-ditail{
+  margin-top: 100px;
+  margin-left: 35px;
+}
+
 .stylist-img{
   margin: 100px auto;
+}
+
+.stylist-introduction{
+  margin-top: 100px;
+  margin-left: 20px;
+}
+
+.stylist-histly{
+  margin-top: 50px;
+}
+
+.menu{
+  background: #F2F2F2;
+}
+
+.menu-text{
+  text-align: center;
+  font-family: Roboto Condensed;
+  size: 30px;
+  color: #39454b;
+  padding-top: 150px;
+  padding-bottom: 50px;
 }
