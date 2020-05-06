@@ -1,0 +1,38 @@
+// Place all the styles related to the homes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#top_image{
+  height: 800px;
+  background-image: url(guilherme-petri-PtOfbGkU3uI-unsplash.jpg);
+  background-size: cover;
+}
+
+.news{
+  background: rgba(0, 0, 0, 0.4);
+  height: 700px;
+  border-bottom: 1px;
+}
+.news-content{
+  margin-top: 148px;
+}
+
+.news-text{
+  text-align: center;
+  font-family: Roboto Condensed;
+  size: 30px;
+  color: #39454b;
+}
+
+.about-img{
+  height: 1322px;
+  background-image: url(suhyeon-choi-ehxwis6Ltxg-unsplash.jpg);
+  width: 50%;
+  background-size: cover;
+}
+.about-text{
+  border-bottom: 1px solid gray;
+}
+
+.stylist-img{
+  margin: 100px auto;
+}
