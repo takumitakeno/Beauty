@@ -16,5 +16,8 @@
 
 //= require rails-ujs
 //= require activestorage
-//= require turbolinks
+
 //= require_tree .
+//= require("rails-ujs").start()
+//= require("trix")
+//= require("@rails/actiontext")
