@@ -1,6 +1,44 @@
 // Place all the styles related to the news controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+// index
+#blog-top-image{
+  height: 400px;
+  background-image: url(timothy-buck-psrloDbaZc8-unsplash.jpg);
+  background-size: cover;
+  padding-top: 200px;
+}
+.blog-text{
+  width: 75px;
+  height: 38px;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+}
+.blog-content-all{
+  background: #F2F2F2;
+}
+.blog-content{
+  padding: 135px 0;
+}
+.reservation{
+  padding: 75px 0;
+}
+
+.reservation-text{
+  text-align: center;
+}
+.reservation-box{
+  margin-top: 70px;
+  text-align: center;
+}
+#shop-map{
+  height: 450px;
+  background-color: whitesmoke;
+}
+
+// new
 #news-wrapper{
   background-color:  #F2F2F2;;
 }

@@ -3,13 +3,18 @@ class NewsController < ApplicationController
     @news = News.new
   end
 
+  def index
+    @news = News.all
+  end
+
   def show
     @news = News.find(params[:id])
   end
   
   def create
     news = News.new(news_params)
-    news.create
+    news.save
+    binding.pry
     redirect_to new_news_path
   end
 
@@ -29,5 +34,5 @@ class NewsController < ApplicationController
   def news_params
     params.require(:news).permit(:title, :content)
   end
-  
+
 end
