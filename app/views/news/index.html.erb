@@ -9,37 +9,26 @@
 <section class="blog-content-all">
   <div class="container blog-content">
     <div class="row">
-      <div class="col-4">
-        <div class="card">
-          <%= image_tag "guilherme-petri-PtOfbGkU3uI-unsplash.jpg", class: "card-img-top" %>
-          <div class="card-body">
-            <h4 class="card-title">ライトコース</h4>
-            <p class="card-text">ホームページ・ブログ開設など基礎を身に付けたい方向けコースです。</p>
-            <span class="text-right"><%= button_to "read more", "#", class: "btn btn-outline-light btn-sm" %></span>
+      
+      <% @news.each do |n| %>
+        <div class="col-4">
+        
+          <div class="card">
+            <%= image_tag "guilherme-petri-PtOfbGkU3uI-unsplash.jpg", class: "card-img-top" %>
+            <div class="card-body">
+              <h4 class="card-title"><%= n.title %></h4>
+              <p class="card-text"><%= n.content.to_s.truncate(10) %></p>
+              <div class="col text-right">
+                <button type="button" class="btn btn btn-dark rounded-circle p-0" style="width:2rem;height:2rem;">
+                  <%= link_to "→", news_path(n) %>
+                </button>
+              </div>
+            </div>
           </div>
+        
         </div>
-      </div>
-      <div class="col-4">
-        <div class="card">
-          <%= image_tag "guilherme-petri-PtOfbGkU3uI-unsplash.jpg", class: "card-img-top" %>
-          <div class="card-body">
-            <h4 class="card-title">ライトコース</h4>
-            <p class="card-text">ホームページ・ブログ開設など基礎を身に付けたい方向けコースです。</p>
-            <span class="text-right"><%= button_to "read more", "#", class: "btn btn-outline-light btn-sm" %></span>
-          </div>
-        </div>
-      </div>
-      <div class="col-4">
-        <div class="card">
-          <%= image_tag "guilherme-petri-PtOfbGkU3uI-unsplash.jpg", class: "card-img-top" %>
-          <div class="card-body">
-            <h4 class="card-title">ライトコース</h4>
-            <p class="card-text">ホームページ・ブログ開設など基礎を身に付けたい方向けコースです。</p>
-            <span class="text-right"><%= button_to "read more", "#", class: "btn btn-outline-light btn-sm" %></span>
-          </div>
-        </div>
-      </div>
-      <div class="col-12"><p>ページネーション</p></div>
+      <% end %>
+      
     </div>
   </div>
 </section>
@@ -82,53 +71,3 @@
   </div>
 </section>
 
-<section class="footer-top">
-  <div class="container">
-    <div class="row">
-      <div class="col-3">
-        <div class="footer-top-line">
-          <h5 class="footer-top-line-title">SALON INFO</h5>
-          <p>〒000-0000<br>
-          埼玉県さいたま市浦和区</p>
-          <p>Phone: 000-0000-0000(9:00-17:00)</p>
-          <p>Email: info@xxxxxxxxxx.com</p>
-        </div>
-      </div>
-      <div class="col-3">
-        <div class="footer-top-line">
-          <h5 class="footer-top-line-title">content</h5>
-        </div>
-      </div>
-      <div class="col-3">
-        <div class="footer-top-line">
-          <h5 class="footer-top-line-title">blogs</h5>
-        </div>
-      </div>
-      <div class="col-3">
-        <div class="footer-top-line">
-          <h5 class="footer-top-line-title">reservation</h5>
-          <ul>
-            <li>
-              <p>電話予約</p>
-              <%= link_to "0000-000-0000", "#", class: "btn btn btn-light" %><br>
-            </li>
-            <li>
-              <p>LINE</p>
-              <%= link_to "LINEで予約する", "#", class: "btn btn-success" %>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <hr class="fotter-top-outline">
-  <footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-6">
-        <p class="footer-text">@2020 Beauty slon</P>
-      </div>
-    </div>
-  </div>
-</footer>
-</section>

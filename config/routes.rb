@@ -13,4 +13,7 @@ Rails.application.routes.draw do
   get 'news/new' => 'news#new'
   resources :managements
   resources :news
+  devise_scope :admin do
+    get '/admins/sign_out' => 'devise/sessions#destroy'
+  end
 end
