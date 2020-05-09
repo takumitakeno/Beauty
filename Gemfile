@@ -67,4 +67,5 @@ gem 'devise'
 gem 'actiontext'
 gem 'image_processing'
 gem "webpacker"
-
+gem 'rails_admin'
+gem 'cancancan'
