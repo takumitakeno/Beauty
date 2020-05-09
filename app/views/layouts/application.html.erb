@@ -21,8 +21,8 @@
               <li><%= link_to "stylist", "#" %></li>
               <li><%= link_to "menu", "#" %></li>
               <li><%= link_to "ご予約", "#" %></li>
-              <% if admin_signed_in? %>
-                <li><%= link_to "ログアウト", destroy_admin_session_path, method: "delete" %></li>
+              <% if user_signed_in? %>
+                <li><%= link_to "ログアウト", destroy_user_session_path, method: "delete" %></li>
               <% end %>
             </ul>
           </div>
