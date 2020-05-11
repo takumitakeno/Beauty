@@ -1,8 +1,7 @@
 <div id="news-wrapper">
   <div class="container">
     <div class="row">
-      <div class="col-1"></div>
-      <div class="col-9">
+      <div class="col-10 offset-1">
         <p>新規投稿を追加</p>
         <%= form_with model: @news do |form| %>
           <div class="form-group">
@@ -10,15 +9,18 @@
             <%= form.text_field :title, class: "form-control" %>
           </div>
           <div class="form-group">
+            <%= form.label :ブログ写真 %><br>
+            <%= form.attachment_field :image %>
+          </div>
+          <div class="form-group">
             <%= form.label :投稿 %>
             <%= form.rich_text_area :content %><br>
           </div>
-          <div class="form-group">
+          <div class="form-group text-right">
             <%= form.submit "投稿", class: "btn btn-info" %>
           </div>
         <% end %>
       </div>
-      <div class="col-2"></div>
     </div>
   </div>
 </div>
