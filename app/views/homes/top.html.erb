@@ -1,0 +1,117 @@
+
+  <nav class="navbar navbar-expand navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <ul class="nav navbar-nav navbar-right">
+      <li class="float-right"><%= link_to "home", "#" %>
+      <li><%= link_to "news", "#" %>
+      <li><%= link_to "about", "#" %>
+      <li><%= link_to "stylist", "#" %>
+      <li><%= link_to "menu", "#" %>
+      <li><%= link_to "ご予約", "#" %>
+      <% if admin_signed_in? %>
+        <li><%= link_to "ログアウト", destroy_admin_session_path, method: "delete" %>
+      <% end %>
+    </ul>
+    </div>
+  </nav>
+
+<div id="top_image">
+  # ここに予約のボタンを入れる
+  <div class="btn-order"></div>
+</div>
+<main>
+  <section class="news">
+    <div class="container news-content">
+      <div class="row">
+        <div class="col-6 offset-3">
+          <h2 class="news-text">NEWS</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card">
+            <%= image_tag "guilherme-petri-PtOfbGkU3uI-unsplash.jpg", class: "card-img-top" %>
+            <div class="card-body">
+              <h4 class="card-title">ライトコース</h4>
+              <p class="card-text">ホームページ・ブログ開設など基礎を身に付けたい方向けコースです。</p>
+              <span class="text-right"><%= button_to "ボタン名", "#", class: "btn btn-outline-info btn-sm" %></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <%= image_tag "guilherme-petri-PtOfbGkU3uI-unsplash.jpg", class: "card-img-top" %>
+            <div class="card-body">
+              <h4 class="card-title">ライトコース</h4>
+              <p class="card-text">ホームページ・ブログ開設など基礎を身に付けたい方向けコースです。</p>
+              <a href="#" class="btn btn-primary">詳細を見る</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <%= image_tag "guilherme-petri-PtOfbGkU3uI-unsplash.jpg", class: "card-img-top" %>
+            <div class="card-body">
+              <h4 class="card-title">ライトコース</h4>
+              <p class="card-text">ホームページ・ブログ開設など基礎を身に付けたい方向けコースです。</p>
+              <a href="#" class="btn btn-primary">詳細を見る</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="d-flex">
+      <div class="my-box w-50 about-img"></div>
+      <div class="my-box w-50 about-text">
+        <div class="about-ditail">
+          <h2>ABOUT</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="member">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <div class="stylist-img">
+            <%= image_tag 'guilherme-petri-PtOfbGkU3uI-unsplash.jpg', :size =>'300x300', class: "rounded-circle" %>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="stylist-introduction">
+            <h2>STYLIST</h2>
+            <p>owner/stylist<br>佐藤　麻友[sato mayu]</p>
+            <div class="stylist-histly">
+            <p>埼玉で美容師としてのキャリアをスタート後、パリコレ等でメイクアップを行った経験あり。
+                キャリアをスタートさせてから１０年を迎えた今年、ついに自分のお店をオープンにする。
+            </p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 offset-3">
+          <h2 class="menu-text">MENU</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <p>jjjjjjjjjjjjjjjjjjjjjjjj</p>
+        </div>
+        <div class="col-6">
+          <p>カットカット</p>
+        </div>
+      </div
+    <div>
+  </section>
+
+</main>
