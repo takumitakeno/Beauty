@@ -1,0 +1,73 @@
+<section class="blog-image">
+  <div id="blog-top-image">
+    <div class="blog-text">
+      <h2>blog</h2>
+    </div>
+  <div>
+</section>
+
+<section class="blog-content-all">
+  <div class="container blog-content">
+    <div class="row">
+      
+      <% @news.each do |n| %>
+        <div class="col-4">
+        
+          <div class="card">
+            <%= image_tag "guilherme-petri-PtOfbGkU3uI-unsplash.jpg", class: "card-img-top" %>
+            <div class="card-body">
+              <h4 class="card-title"><%= n.title %></h4>
+              <p class="card-text"><%= n.content.to_s.truncate(10) %></p>
+              <div class="col text-right">
+                <button type="button" class="btn btn btn-dark rounded-circle p-0" style="width:2rem;height:2rem;">
+                  <%= link_to "→", news_path(n) %>
+                </button>
+              </div>
+            </div>
+          </div>
+        
+        </div>
+      <% end %>
+      
+    </div>
+  </div>
+</section>
+
+<section class="reservation">
+  <div class="container">
+    <div class="row">
+      <div class="col-6 offset-3 reservation-text">
+        <h2>RESERVATION</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-4">
+        <div class="reservation-box">
+          <h3>電話予約</h3>
+          <%= link_to "0000-000-0000", "#", class: "btn btn-outline-info" %><br>
+          <p>(9:00 - 17:00)</p>
+        </div>
+      </div>
+    
+      <div class="col-4">
+        <div class="reservation-box">
+          <h3>LINE予約</h3>
+          <%= link_to "LINEで予約する", "#", class: "btn btn-outline-success" %><br>
+        </div>
+      </div> 
+    </div>
+    <hr>
+    <h3>ご注意</h3>
+    <p>※当日のご予約はお電話でのみ承ります（受付時間：9:00 - 17:00）。<br>
+    ※施術中はお電話をお受けできないことがございます。その場合はメッセージにお名前・ご連絡先電話番号をお残しください。折り返しご連絡させていただきます。<br>
+    ※施術当日のキャンセルは、キャンセル料を頂戴する場合がございます。予めご了承ください。
+    </p>
+  </div>
+</section>
+
+<section class="map">
+  <div id="shop-map">
+    <p>ここに地図表示</p>
+  </div>
+</section>
+

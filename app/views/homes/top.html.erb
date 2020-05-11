@@ -1,23 +1,10 @@
 
-  <nav class="navbar navbar-expand navbar-dark bg-dark fixed-top">
-  <div class="container">
-    <ul class="nav navbar-nav navbar-right">
-      <li class="float-right"><%= link_to "home", "#" %>
-      <li><%= link_to "news", "#" %>
-      <li><%= link_to "about", "#" %>
-      <li><%= link_to "stylist", "#" %>
-      <li><%= link_to "menu", "#" %>
-      <li><%= link_to "ご予約", "#" %>
-      <% if admin_signed_in? %>
-        <li><%= link_to "ログアウト", destroy_admin_session_path, method: "delete" %>
-      <% end %>
-    </ul>
-    </div>
-  </nav>
+  
 
 <div id="top_image">
-  # ここに予約のボタンを入れる
-  <div class="btn-order"></div>
+  <div class="btn-order">
+    <%= link_to "予約", "#", class: "btn btn-outline-light" %>
+  </div>
 </div>
 <main>
   <section class="news">

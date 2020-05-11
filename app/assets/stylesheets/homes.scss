@@ -3,10 +3,15 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 #top_image{
   height: 800px;
-  background-image: url(guilherme-petri-PtOfbGkU3uI-unsplash.jpg);
+  background-image: url(timothy-buck-psrloDbaZc8-unsplash.jpg);
   background-size: cover;
+  padding-top: 400px;
 }
-
+.btn-order{
+  margin: 0 auto;
+  height: 40px;
+  width: 120px;
+}
 .news{
   background: #F2F2F2;
   border-bottom: 1px;
