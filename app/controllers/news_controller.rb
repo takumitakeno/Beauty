@@ -4,7 +4,7 @@ class NewsController < ApplicationController
   end
 
   def index
-    @news = News.all
+    @news = News.all.last(3)
   end
 
   def show
@@ -32,7 +32,7 @@ class NewsController < ApplicationController
 
   private
   def news_params
-    params.require(:news).permit(:title, :content)
+    params.require(:news).permit(:title, :content, :image)
   end
 
 end

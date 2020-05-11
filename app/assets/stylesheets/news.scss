@@ -36,6 +36,8 @@
 #shop-map{
   height: 450px;
   background-color: whitesmoke;
+  background-image: url(waldemar-brandt-aHZF4sz0YNw-unsplash.jpg);
+  background-size: cover;
 }
 
 .footer-top{
@@ -65,13 +67,19 @@ footer{
 
 // new
 #news-wrapper{
-  background-color:  #F2F2F2;;
+  padding: 150px 0;
+  margin: 0 auto;
 }
 
 // show
 .news{
-
+  padding: 50px 0;
 }
 .news-header{
+  padding-top: 50px;
   border-bottom: 1px dotted #c2c2c2;
+}
+
+.next-page{
+  padding: 100px 0;
 }

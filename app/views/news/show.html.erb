@@ -1,25 +1,29 @@
-<div class="main">
+
   <section class="show-news">
     <div class="container">
       <div class="row">
         <div class="col-8">
-          <div class="news">
+          <dicv class="news">
             <div class="news-header">
               <h1><%= @news.title %></h1>
               <p><%= @news.created_at %></p>
+              <%= attachment_image_tag @news, :image, :fill, 300, 300, format: 'jpeg' %>
             </div>
             <div class="row">
               <div class="col-12">
-                <p><%= @news.content %></p>
+                <div class="news">
+                  <p><%= @news.content %></p>
+                </div>
+              </div>
+              <div class="col-12">
+                <hr>
+                <div class="next-page text-center">
+                  <p>back|next</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-3 offset-1">
-          <div class="show-news-all">
-            </div>
-        </div>
       </div>
     </div>
   </section>
-</div>

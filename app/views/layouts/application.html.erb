@@ -24,6 +24,9 @@
               <% if user_signed_in? %>
                 <li><%= link_to "ログアウト", destroy_user_session_path, method: "delete" %></li>
               <% end %>
+              <% if current_user.try(:admin?) %>
+                <li><%= link_to "管理画面", "/admin" %></li>
+              <% end %>
             </ul>
           </div>
         </div>
